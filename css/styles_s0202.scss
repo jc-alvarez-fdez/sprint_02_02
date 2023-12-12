@@ -1,0 +1,228 @@
+
+$primary: #781818;
+
+
+
+$theme-colors: (
+  "primary": $primary,
+
+);
+
+$grocery: #b57449;
+$beauty: #91403f;
+$clothes: #937b34;
+
+
+@import "../boostrap/scss/bootstrap.scss";
+
+// Shop
+
+.bg-dark  {
+    background-color: $primary;
+}
+
+.card.h-100 {
+  .text-center:last-child {
+    color: grey;
+    font-size: 20px;
+  };
+}
+
+.navbar-nav {
+  
+  a[href*="#grocery"]:hover {
+    color: $grocery;
+  }
+  a[href*="#beauty"]:hover {
+    color: $beauty;
+  }
+
+  a[href*="#clothes"]:hover {
+    color: $clothes;
+  }
+
+}
+
+// Grocery
+#grocery {
+
+    h2 {
+      color: $grocery;
+    }
+  
+  .card.h-100 {
+   border-color: $grocery;
+  }
+  
+    .h5 {
+
+      color: $grocery;
+    }
+
+    .fw-bolder {
+      
+      color: $grocery;
+  }
+
+    .btn {
+      background-color: $grocery;
+      color: white;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: $grocery;
+      border: 1px solid $grocery;
+      box-shadow: 4px 4px 4px grey;
+    }
+}
+
+// Beauty
+
+#beauty {
+
+  h2 {
+    color: $beauty;
+  }
+
+.card.h-100 {
+ border-color: $beauty;
+}
+
+  .h5 {
+
+    color: $beauty;
+  }
+
+  .fw-bolder {
+    
+    color: $beauty;
+}
+
+  .btn {
+    background-color: $beauty;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: white;
+    color: $beauty;
+    border: 1px solid $beauty;
+    box-shadow: 4px 4px 4px grey;
+  }
+}
+
+// Clothes
+
+#clothes {
+
+  h2 {
+    color: $clothes;
+  }
+
+  .card.h-100 {
+  border-color: $clothes;
+  }
+
+  .h5 {
+
+    color: $clothes;
+  }
+
+  .fw-bolder {
+    
+    color: $clothes;
+}
+
+  .btn {
+    background-color: $clothes;
+    color: white;
+  }
+  .btn:hover {
+    background-color: white;
+    color:  $clothes;
+    border: 1px solid $clothes;
+    box-shadow: 4px 4px 4px grey;
+  }
+}
+
+// Chart
+
+.table {
+
+  thead {
+   border-bottom: 3px solid $primary;
+    color: $primary;
+  }
+
+  button {
+    background-color: initial;
+    border: none;
+    color: $primary;
+  }
+  button:hover {
+    color: grey;
+    transform: scale(125%);
+  }
+
+
+  td, th {
+    text-align: center;
+    line-height: 0.8em;
+  }
+}
+
+#total_price {
+  font-weight: 800;
+  color: $primary;
+}
+
+#cartModal {
+  a:hover {
+    background-color: white;
+    color:  $primary;
+    border: 1px solid $primary;
+    box-shadow: 4px 4px 4px grey;
+  } 
+}
+
+// Checkout
+
+h3 {
+  color: $primary;
+}
+
+form {
+
+  #btn:hover {
+    background-color: white;
+    color:  $primary;
+    border: 1px solid $primary;
+    box-shadow: 4px 4px 4px grey;
+  }
+
+  .invalid-feedback {
+    display: none;
+    width: 100%;
+    padding: 0.35rem;
+    font-size: 0.875em;
+    font-weight: 600;
+    background-color: #dc3545;
+    border-radius: 0 0 5px 5px;
+    margin-top: -5px;
+    color:white;
+  }
+
+  label {
+    color: $primary;
+  }
+}
+
+
+
+
+
+
+
+
+
