@@ -1,6 +1,9 @@
 
 // Exercise 6
-function validate() {
+
+function validate(event) {
+
+
 	let error = 0;
 	
 	let fName = document.getElementById("fName");
@@ -29,6 +32,7 @@ function validate() {
 		error++;
 		fName.classList.add("is-invalid"); 
 		errorName.innerHTML = "Aquest camp és obligatori i només ha de contenir lletres amb almenys 3 caràcters";
+		console.log("no para");
 	}
 	else {
 
@@ -100,8 +104,12 @@ function validate() {
 	 
 	if(error>0){
 		alert("Error");
+
 	}else{
 		alert("La vostra comanda s'ha realitzat correctament");
+		
 	}
+	
+	form.submit();
 
 }
