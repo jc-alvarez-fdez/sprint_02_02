@@ -2,7 +2,7 @@
 // Exercise 6
 function validate() {
 	let error = 0;
-	// Obtener los campos de entrada
+	
 	let fName = document.getElementById("fName");
 	let fLastN = document.getElementById("fLastN");
 	let fEmail = document.getElementById("fEmail");
@@ -10,8 +10,6 @@ function validate() {
 	let fAddress = document.getElementById("fAddress");
 	let fPhone = document.getElementById("fPhone");
 
-
-	// Obtener los elementos de error
 	let errorName = document.getElementById("errorName");
 	let errorLastN = document.getElementById("errorLastN");  
 	let errorEmail = document.getElementById("errorEmail"); 
@@ -19,26 +17,12 @@ function validate() {
 	let errorAddress = document.getElementById("errorAddress");
 	let errorPhone = document.getElementById("errorPhone");    
 	
-	let regExLetras = /^[a-zA-ZÀ-ÿ]+$/; //incluye todas las letras del alfabeto latino, tanto mayúsculas como minúsculas, así como letras con acentos y diacríticos comunes en las lenguas románicas
+	let regExLetras = /^[a-zA-ZÀ-ÿ]+$/;
 	let regExEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 	let regExPassword = /^(?=.*[a-zA-Z])(?=.*\d).{4,8}$/
 	let regExAddress = /^[a-zA-Z0-9ªº/ ]+$/;
 	let regExPhone = /^\d{9}$/;
 
-	 
-
-	
-	// Validar los campos ingresados por el usuario: nombre, teléfono, contraseña y correo electrónico
-
-	/*
-	"error" actúa como un contador para hacer un seguimiento del número de errores encontrados durante la validación de los campos.
-
-	El método test() se utiliza para comprobar si la exReg y la cadena ingresada (value) coinciden. 
-
-	Con .value.length < 3 me aseguro de que al menos haya 3 caracteres en cada campo
-
-	Con classList añado (.add) o elimino (.remove) la clase "is-invalid"
-	*/
 
 	if (fName.value.length < 3 || !regExLetras.test(fName.value)) {
 
